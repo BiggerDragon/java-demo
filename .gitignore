@@ -1,0 +1,8 @@
+
+.idea/compiler.xml
+
+target/*
+.idea/*
+*.iml
+.idea/vcs.xml
+

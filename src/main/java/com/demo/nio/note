@@ -1,0 +1,26 @@
+java NIO三大组件
+Channels、Buffers、Selectors
+
+Channel可以将数据读到Buffer中，也可以从Buffer写到Channel
+
+Channel主要实现:
+Channel是个接口
+FileChannel
+DatagramChannel
+ServerSocketChannel
+SocketChannel
+
+Buffer的实现:
+Buffer是个抽象类
+ByteBuffer
+CharBuffer
+DoubleBuffer
+FloatBuffer
+IntBuffer
+LongBuffer
+ShortBuffer
+
+Selector允许单个线程处理多个Channel，用于监听多个通道的事件
+要想使用selector必须先向selector注册channel, 然后调用select方法，该方法一直阻塞至某个注册的channel上有事件就绪,
+select方法返回，线程就可以处理这些事件。
+
