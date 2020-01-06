@@ -6,3 +6,7 @@ target/*
 *.iml
 .idea/vcs.xml
 
+/target/
+.project
+.classpath
+/.settings

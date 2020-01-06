@@ -1,6 +1,6 @@
 package com.demo.io;
 
-import ed.dragon.util.NullUtil;
+//import ed.dragon.util.NullUtil;
 
 import java.io.ByteArrayOutputStream;
 import java.io.FileOutputStream;
@@ -94,18 +94,18 @@ public class OutputStreamDemo {
 
     }
 
-    static class StringNullUtil extends NullUtil{
-        public boolean isEmpty(String string){
-
-            /**不同包子类可以访问**/
-            System.out.println(NAME);
-
-            /**不同包无法访问default的变量**/
-            /**System.out.println(CLASS_LOADER_NAME);**/
-
-            if (string==null || "".equals(string))
-                return true;
-            else return false;
-        }
-    }
+//    static class StringNullUtil extends NullUtil{
+//        public boolean isEmpty(String string){
+//
+//            /**不同包子类可以访问**/
+//            System.out.println(NAME);
+//
+//            /**不同包无法访问default的变量**/
+//            /**System.out.println(CLASS_LOADER_NAME);**/
+//
+//            if (string==null || "".equals(string))
+//                return true;
+//            else return false;
+//        }
+//    }
 }
